@@ -7,8 +7,6 @@ export default function CardGrid({cards, handleClick}) {
       {cards.map((card) => (
         <Card key={card.id} 
               card={card}
-              name={card.name} 
-              pokemonId={card.pokemonId}
               handleClick={handleClick}  
                />
       ))}
