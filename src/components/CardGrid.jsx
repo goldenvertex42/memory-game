@@ -1,5 +1,4 @@
 import Card from "./Card";
-import shuffleArray from "../utils/shuffleArray";
 
 export default function CardGrid({cards, handleClick}) {
     return (
