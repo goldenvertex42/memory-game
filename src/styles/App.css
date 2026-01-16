@@ -1,0 +1,33 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  margin: 2rem;
+  cursor: pointer;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
