@@ -15,10 +15,10 @@ export default function Card({card, handleClick}) {
 
     return(
         <div className="card" onClick={() => handleClick(card)}>
-            <img src={imageUrl}
-                alt={card.name}
-                width='150px'
-                height='auto' />
+            <img 
+                className="card-image"
+                src={imageUrl}
+                alt={card.name} />
             <h2 className="name">{card.name}</h2>
         </div>
     );
