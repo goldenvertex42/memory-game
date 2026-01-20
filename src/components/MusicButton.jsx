@@ -27,7 +27,7 @@ function AudioPlayer({ src }) {
 
       {/* Button to control play/pause */}
       <button className="play-pause" onClick={togglePlayPause}>
-        <img className='icon' src={isPlaying ? pauseIcon : playIcon} alt="Play/Pause" /> Lavender Town Theme
+        <img className='icon' src={isPlaying ? pauseIcon : playIcon} alt="Play/Pause" />
       </button>
     </div>
   );
