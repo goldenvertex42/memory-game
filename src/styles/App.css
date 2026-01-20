@@ -6,13 +6,26 @@
 }
 
 body {
-  background-image: url(../assets/lavender-town.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
   font-family: 'Pixelify Sans', sans-serif;
   color: white;
+}
+
+body {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed; /* This simulates the fixed background */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/lavender-town.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Keep it behind your content */
+  will-change: transform; /* Hint for browser performance */
 }
 
 h2 {
@@ -34,19 +47,10 @@ h2 {
 }
 
 .fixed-top-right {
-    /* Step 1: Fix the position relative to the viewport */
     position: fixed;
-
-    /* Step 2: Position it at the top */
-    top: 20px; /* Adjust as needed for desired spacing */
-
-    /* Step 3: Position it to the right */
-    right: 20px; /* Adjust as needed for desired spacing */
-
-    /* Optional: Add a high z-index to ensure it stays above other content */
+    top: 20px;
+    right: 20px;
     z-index: 1000;
-
-    /* Optional: Add styling to make it look like a button */
     padding: 10px 15px;
     color: white;
     border: none;
