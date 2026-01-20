@@ -5,6 +5,56 @@
   text-align: center;
 }
 
+body {
+  background-image: url(../assets/lavender-town.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+h2 {
+  margin: 0;
+  letter-spacing: 0.05rem;
+}
+
+.icon {
+  display: inline;
+  width: 2rem;
+}
+
+.play-pause {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fixed-top-right {
+    /* Step 1: Fix the position relative to the viewport */
+    position: fixed;
+
+    /* Step 2: Position it at the top */
+    top: 20px; /* Adjust as needed for desired spacing */
+
+    /* Step 3: Position it to the right */
+    right: 20px; /* Adjust as needed for desired spacing */
+
+    /* Optional: Add a high z-index to ensure it stays above other content */
+    z-index: 1000;
+
+    /* Optional: Add styling to make it look like a button */
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+}
+
+
 .header {
   display: flex;
   flex-direction: column;
@@ -16,20 +66,26 @@
   text-decoration: underline;
 }
 
+.instructions {
+  font-size: 1.2rem;
+}
+
 .card {
   margin: 0 2rem;
   cursor: pointer;
   border: 1px solid white;
   border-radius: 8px;
+  background-color: #55588f;
+  transition: transform 250ms;
 }
 
-.read-the-docs {
-  color: #888;
+.card:hover {
+  transform: translateY(-10px) scale(1.2);
 }
 
 .card-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 1rem;
 }
 
